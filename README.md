@@ -1,10 +1,8 @@
 <p align="center">
     <a href="https://meet-me-halfway.com" target="_blank">
-        
+        <img src="https://meet-me-halfway.com/favicon.ico" width="400" alt="Meet Me Halfway Logo">
     </a>
 </p>
-
-
 
 ## About Meet Me Halfway
 
