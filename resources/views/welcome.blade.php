@@ -29,10 +29,7 @@
                     <div class="flex-shrink-0 flex items-center -ml-3 sm:-ml-0">
                         <a href="{{ url('/') }}">{{ config('app.name', 'Meet Me Halfway') }}</a>
                     </div>
-                    <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
-                        <!-- Navigation Links -->
-                        <!-- More navigation items -->
-                    </div>
+
                 </div>
                 <div class="sm:ml-6 flex items-center">
                     <!-- Authentication Links -->
@@ -75,10 +72,8 @@
     <div class="py-10">
         <main>
             <div class="max-w-7xl mx-auto sm:px-6 lg:px-8 ">
-                <!-- Replace with your content -->
                 <div class="px-4 py-8 sm:px-0">
                     <div class="border-4 border-dashed border-gray-200 rounded-lg h-auto">
-                        <!-- Hero Section -->
                         <div class="bg-white overflow-hidden">
                             <div class="relative max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8 lg:py-24">
                                 <div class="text-center">
@@ -110,7 +105,7 @@
 
                                 <div class="mt-10">
                                     <dl class="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10">
-                                        <!-- Feature 1 -->
+                                        <!-- Feature Nearby Amenities -->
                                         <div class="fade-in relative" style="animation-delay: 3s;">
                                             <dt>
                                                 <p class="text-lg leading-6 font-medium text-gray-900">Nearby Amenities</p>
@@ -120,7 +115,7 @@
                                             </dd>
                                         </div>
 
-                                        <!-- Feature 2 -->
+                                        <!-- Feature Safety First -->
                                         <div class="fade-in relative" style="animation-delay: 3.5s;">
                                             <dt>
                                                 <p class="text-lg leading-6 font-medium text-gray-900">Safety First</p>
@@ -168,8 +163,7 @@
                                             <div class="mt-8 md:mt-5">
                                                 <ul class="mt-4 space-y-4">
                                                     <li><a href="/team/more-members" class="hover:underline">Sabrina Salazar</a></li>
-                                                    <li><a href="https://www.linkedin.com/in/hasti-rathod/" class="hover:underline">Hasti Rathod</a></li>
-                                                    
+                                                    <li><a href="https://www.linkedin.com/in/hasti-rathod/" target="_blank" class="hover:underline">Hasti Rathod</a></li>                                                    
                                                 </ul>
                                             </div>
 
@@ -190,7 +184,6 @@
 
                     </div>
                 </div>
-                <!-- /End replace -->
             </div>
         </main>
     </div>

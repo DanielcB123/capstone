@@ -106,7 +106,7 @@
                     alert.style.display = 'none';
                 });
             }
-        }, 2000); // 3000 milliseconds = 3 seconds
+        }, 2000);
     });
 </script>
 

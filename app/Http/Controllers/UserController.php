@@ -36,13 +36,6 @@ class UserController extends Controller
     }
 
 
-    // // Edit User Profile
-    // public function edit()
-    // {
-    //     $user = auth()->user();
-    //     return view('user.edit', compact('user'));
-    // }
-
     // Update User Profile
     public function update(Request $request)
     {

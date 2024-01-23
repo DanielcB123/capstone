@@ -59,12 +59,11 @@
                 <!-- Conversation View -->
                 <div class="mt-4 overflow-y-auto" style="max-height: 50vh;">
                     <div id="conversation" class="space-y-2">
-                        <!-- Dummy Messages -->
+                        <!-- Dummy Messages For DEV -->
                         <div class="p-2 bg-gray-200 rounded-lg">Hi there! How are you?</div>
                         <div class="p-2 bg-blue-200 rounded-lg text-right">I'm good, thanks for asking!</div>
                         <div class="p-2 bg-gray-200 rounded-lg">Glad to hear that. Are we still meeting tomorrow?</div>
                         <div class="p-2 bg-blue-200 rounded-lg text-right">Yes, absolutely.</div>
-                        <!-- Add more dummy messages as needed -->
                     </div>
                 </div>
             </div>

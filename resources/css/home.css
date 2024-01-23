@@ -43,7 +43,7 @@
 
 /* Style for the Friend Request Button */
 .friend-request-btn {
-    background-color: #0891b2; /* Green background */
+    background-color: #0891b2;
     border: none;
     color: white;
     padding: 8px 8px;
@@ -58,7 +58,7 @@
 }
 
 .friend-request-btn:hover {
-    background-color: #06b6d4; /* Darker green on hover */
+    background-color: #06b6d4; 
 }
 
 #friendAddress {
@@ -102,20 +102,20 @@
 
 
 .places-checkboxes label {
-    margin-right: 10px; /* Space between each checkbox */
+    margin-right: 10px; 
 }
 
 .places-checkboxes {
-    display: flex; /* Align items in a row */
-    flex-wrap: wrap; /* Wrap to next line if screen is small */
-    align-items: center; /* Align items vertically */
-    margin-bottom: 15px; /* Space below the entire container */
+    display: flex; 
+    flex-wrap: wrap; 
+    align-items: center;
+    margin-bottom: 15px; 
     margin-top: 10px;
 }
 
 #searchPlacesBtn {
-    margin-left: 10px; /* Space between the last checkbox and button */
-    padding: 5px 10px; /* Padding inside the button */
+    margin-left: 10px; 
+    padding: 5px 10px; 
 }
 
 

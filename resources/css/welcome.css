@@ -42,5 +42,5 @@
 .fade-in {
     opacity: 0;
     animation: fadeIn .7s ease-out forwards;
-    animation-delay: .5s; /* default delay */
+    animation-delay: .5s; 
 }

@@ -29,7 +29,7 @@ function displayFriendRequestMessage() {
         messageElement.style.transform = 'translateX(-50%)';
     }, 0); // Delayed by 1 second
 
-    // Remove the message after 2 seconds
+    // Remove the message after .7 seconds
     setTimeout(function() {
         // Slide it out to the right
         messageElement.style.transform = 'translateX(100%)';
@@ -84,25 +84,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
     
     loadFriends();
     loadFavorites();
-
-
-    // fetch(`/favorites`, {
-    //         method: 'GET',
-    //     })
-    //     .then(response => response.json())
-    //     .then(data => {
-    //         console.log(data);
-    //         console.log('Is array?', Array.isArray(data.data));
-    //         // Check if data.data is an array and not empty
-    //         if (Array.isArray(data) && data.length > 0) {
-    //             // displayFavorites(data);
-    //         } else {
-    //             // Handle the case where there are no favorites
-    //             document.getElementById('favoritesTable').innerHTML = '<p>No favorites found.</p>';
-    //         }
-    //     })
-    //     .catch(error => console.error('Error loading favorites:', error));
-
 
     document.getElementById('findMeetSpotsForm').addEventListener('submit', function(event) {
         event.preventDefault(); // Prevent form submission
@@ -179,15 +160,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
         const friendSelect = document.getElementById('friendList');
         const friendAddress = friendSelect.options[friendSelect.selectedIndex].dataset.address;
     
-        // if (userAddress && friendAddress) {
-        //     Promise.all([getCoordinates(userAddress), getCoordinates(friendAddress)])
-        //         .then(([userLocation, friendLocation]) => {
-        //             const midpoint = calculateMidpoint(userLocation.lat, userLocation.lng, friendLocation.lat, friendLocation.lng);
-        //             initMap(userLocation, friendLocation, midpoint);
-        //         })
-        //         .catch(error => console.error('Error:', error));
-        // }
-
         fetch('/update-address', {
             method: 'POST',
             headers: {
@@ -199,7 +171,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
         .then(response => response.json())
         .then(data => {
             console.log(data.message); // Log the response message
-            // Additional actions upon successful update
+            
         })
         .catch(error => console.error('Error:', error));
     });
@@ -289,7 +261,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
             .then(data => {
                 console.log('Favorite added:', data);
                 loadFavorites()
-                // Optionally, update the UI to reflect the new favorite
             })
             .catch(error => console.error('Error adding favorite:', error));
         }
@@ -299,7 +270,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
     function loadFriends() {
         
-        fetch('/friends')  // Adjust if you're using a prefix or different route
+        fetch('/friends') 
             .then(response => response.json())
             .then(friends => {
                 const friendList = document.getElementById('friendList');
@@ -307,9 +278,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
     
                 friends.forEach(friend => {
                     let option = document.createElement('option');
-                    option.value = friend.id; // Adjust if your friend object uses different key
-                    option.textContent = friend.name; // Adjust if your friend object uses different key
-                    option.dataset.address = friend.address; // Store the address in the option
+                    option.value = friend.id;
+                    option.textContent = friend.name;
+                    option.dataset.address = friend.address;
                     friendList.appendChild(option);
                 });
     
@@ -338,7 +309,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
             addressDiv.id = 'friendAddress';
             selectElement.parentNode.insertBefore(addressDiv, selectElement.nextSibling);
         }
-        addressDiv.innerHTML = message; // Use innerHTML since we're now including HTML in the message
+        addressDiv.innerHTML = message; // Use innerHTML since we're including HTML in the message
     }
     
 

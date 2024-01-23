@@ -34,7 +34,6 @@ class FriendRequestController extends Controller
                 return [
                     'id' => $request->id,
                     'senderName' => $request->sender->name, // Get the sender's name from the relationship
-                    // Add any other relevant data here
                 ];
             });
         return response()->json($transformedRequests);
