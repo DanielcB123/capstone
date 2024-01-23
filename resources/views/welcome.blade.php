@@ -3,7 +3,10 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Laravel</title>
+    <title>Meet Me Halfway</title>
+    <link rel="icon" href="{{ asset('favicon.ico') }}">
+
+
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet">
     @vite(['resources/js/welcome.js', 'resources/css/app.css', 'resources/css/welcome.css'])
@@ -28,7 +31,6 @@
                     </div>
                     <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
                         <!-- Navigation Links -->
-                        {{-- <a href="#" class="border-indigo-500 text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"> Home </a> --}}
                         <!-- More navigation items -->
                     </div>
                 </div>
@@ -36,15 +38,28 @@
                     <!-- Authentication Links -->
                     @guest
                         @if (Route::has('login'))
-                            <a href="{{ route('login') }}" class="rounded px-5 py-2 bg-sky-600 hover:bg-sky-500 text-gray-100 hover:text-white">Log in</a>
+                            <a href="{{ route('login') }}" class="rounded px-2 py-2 bg-sky-600 hover:bg-sky-500 text-gray-100 hover:text-white">Log in</a>
                         @endif
                         @if (Route::has('register'))
-                            <a href="{{ route('register') }}" class="rounded px-5 py-2 bg-emerald-600 hover:bg-emerald-500 ml-4 text-gray-100 hover:text-white">Register</a>
+                            <a href="{{ route('register') }}" class="rounded px-2 py-2 bg-emerald-600 hover:bg-emerald-500 ml-4 text-gray-100 hover:text-white">Sign Up</a>
                         @endif
                     @endguest
 
+                    @if(Auth::user())
+                    <div class="flex">
+                        <a href="/home" class="bg-green-400 hover:bg-green-300 p-2 rounded mx-1 text-white">Home</a>
+                        <a class="bg-sky-400 hover:bg-sky-300 p-2 rounded mx-1 text-white" href="{{ route('logout') }}"
+                            onclick="event.preventDefault();
+                                            document.getElementById('logout-form').submit();">
+                                {{ __('Logout') }}
+                        </a>
 
-                    
+                        <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                            @csrf
+                        </form>
+                    </div>
+
+                    @endif
                     
                 </div>
             </div>
@@ -53,8 +68,8 @@
 
 
 
-
-
+                    
+    
     
     <!-- Body Section -->
     <div class="py-10">
@@ -74,7 +89,7 @@
                                     
 
                                     <p class="fade-in mt-4 text-lg leading-6 text-gray-500">
-                                        Finding the perfect meeting point has never been easier.
+                                        Finding the perfect meeting point has never been easier. 
                                     </p>
                                     
                                 </div>
@@ -143,8 +158,9 @@
                                                 <h4 class="text-sm font-semibold uppercase tracking-wider">Team Members</h4>
                                                 <ul class="mt-4 space-y-4">
                                                     <li><a href="/team/john-doe" class="hover:underline">Daniel Burgess</a></li>
-                                                    <li><a href="/team/jane-doe" class="hover:underline">Able</a></li>
-                                                    <li><a href="/team/more-members" class="hover:underline">Andy Bradford</a></li>
+                                                    <li><a href="/team/jane-doe" class="hover:underline">Abel Hernandez</a></li>
+                                                    <li><a href="/team/jane-doe" class="hover:underline">Naomi Unuane</a></li>
+                                                    <li><a href="/team/more-members" class="hover:underline">Andrew Bradford</a></li>
 
                                                 </ul>
                                             </div>
@@ -152,6 +168,8 @@
                                             <div class="mt-8 md:mt-5">
                                                 <ul class="mt-4 space-y-4">
                                                     <li><a href="/team/more-members" class="hover:underline">Sabrina Salazar</a></li>
+                                                    <li><a href="/team/more-members" class="hover:underline">Hasti Rathod</a></li>
+                                                    
                                                 </ul>
                                             </div>
 

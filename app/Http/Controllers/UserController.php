@@ -84,7 +84,7 @@ class UserController extends Controller
     public function uploadImage(Request $request)
     {
         $request->validate([
-            'profile_picture' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048',
+            'profile_picture' => ['nullable', 'image', 'mimes:jpeg,png,jpg,gif', 'max:100000'],
         ]);
 
         $user = auth()->user();
