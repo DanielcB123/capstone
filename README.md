@@ -1,23 +1,10 @@
 <p align="center">
     <a href="https://meet-me-halfway.com" target="_blank">
-        <img src="your-logo-url" width="400" alt="Meet Me Halfway Logo">
+        
     </a>
 </p>
 
-<p align="center">
-    <a href="https://github.com/yourusername/meet-me-halfway/actions">
-        <img src="https://github.com/yourusername/meet-me-halfway/workflows/tests/badge.svg" alt="Build Status">
-    </a>
-    <a href="https://packagist.org/packages/yourusername/meet-me-halfway">
-        <img src="https://img.shields.io/packagist/dt/yourusername/meet-me-halfway" alt="Total Downloads">
-    </a>
-    <a href="https://packagist.org/packages/yourusername/meet-me-halfway">
-        <img src="https://img.shields.io/packagist/v/yourusername/meet-me-halfway" alt="Latest Stable Version">
-    </a>
-    <a href="https://packagist.org/packages/yourusername/meet-me-halfway">
-        <img src="https://img.shields.io/packagist/l/yourusername/meet-me-halfway" alt="License">
-    </a>
-</p>
+
 
 ## About Meet Me Halfway
 
