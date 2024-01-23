@@ -19,6 +19,8 @@
 
 - **Laravel**
 - **AWS EC2**
+- **AWS RDS**
+- **AWS ROUTE53**
 - **MySQL**
 - **Nginx**
 - **TailwindCSS**
