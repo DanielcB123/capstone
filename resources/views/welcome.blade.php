@@ -168,7 +168,7 @@
                                             <div class="mt-8 md:mt-5">
                                                 <ul class="mt-4 space-y-4">
                                                     <li><a href="/team/more-members" class="hover:underline">Sabrina Salazar</a></li>
-                                                    <li><a href="/team/more-members" class="hover:underline">Hasti Rathod</a></li>
+                                                    <li><a href="https://www.linkedin.com/in/hasti-rathod/" class="hover:underline">Hasti Rathod</a></li>
                                                     
                                                 </ul>
                                             </div>
