@@ -17,15 +17,14 @@
 
 ### Key Technologies Used
 
-- **Laravel**
-- **AWS EC2**
-- **AWS RDS**
-- **AWS ROUTE53**
-- **MySQL**
-- **Nginx**
-- **TailwindCSS**
-- **HTML**
+- **PHP**
 - **Vanilla JS**
+- **HTML**
+- **TailwindCSS**
+- **MySQL**
+- **Laravel**
+- **Nginx**
+- **AWS**
 
 ### Using the App
 
